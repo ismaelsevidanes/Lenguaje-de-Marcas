@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+
+    <H1 style="text-align: center;">HOJA DE INSCRIPCIÓN 
+    </H1>
+    <H1 style="text-align: center;">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</H1>
+<form action="iesalixar.org" method="get">
+    <fieldset style="background: rgb(192, 154, 228);">
+    <legend style="border: 1px solid black; background-color: white">Datos Personales</legend>
+    <table>
+        <tbody><tr>
+            <td><label for="nombre">Nombre:</label></td>
+            <td><label for="apellidos">Apellidos:</label></td>
+            <td><label for="dni">DNI</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nombre"></td>
+            <td><input type="text" name="apellidos"></td>
+            <td><input type="text" name="dni"></td>
+        </tr>
+        <tr>
+            <td><label for="localidad">Localidad de Nacimiento</label></td>
+            <td><label for="provincia">Provincia:</label></td>
+            <td><label for="fecha">Fecha de Nacimiento</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="localidad"></td>
+            <td>
+                <select name="provincia">
+                    <option>--Selecciona--</option>
+                    <option>Huelva</option>
+                    <option>Sevilla</option>
+                    <option>Cádiz</option>
+                    <option>Córdoba</option>
+                    <option>Jaén</option>
+                    <option>Granada</option>
+                    <option>Málaga</option>
+                    <option>Almería</option>
+                </select>
+            </td>
+            <td>
+                <input type="date" name="fecha">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="direccion">Dirección</label></td>
+            <td><label for="codpostal">Código Postal:</label></td>
+
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" size="40" name="direccion">
+            </td>
+            <td>
+                <input type="text" name="codpostal">
+            </td>
+        </tr>
+    </tbody></table>
+
+
+    </table>
+
+    </fieldset>
+    <fieldset style="background:rgb(238, 196, 180);">
+    <legend style="border: 1px solid black; background-color: white;">Forma de Acceso</legend>
+      <ul style="list-style: none;">
+        <input type="radio" id="9" name="Direct" >Directo</input>
+        <li>
+          <ul>             
+             <input  type ="radio"  id="7" name="radio">Bachillerato Log Modalidad</input><input type="text">
+          </ul>
+          <ul>
+            <input type="radio" id="5" name="radio">Experimental</input>
+          </ul>
+          <ul>            
+            <input type="radio" id="8" name="radio">COU Opción</input><input type="text">
+          </ul>
+          <ul>            
+            <input type="radio" id="10" name="radio">FP2</input>
+          </ul>
+          <ul>            
+            <input type="radio" id="11" name="radio">Otros (especifique)</input><input type="text">
+          </ul>
+        </li>
+
+        <input type="radio" id="12" name="Direct" >Prueba Libre</input>
+      </ul>
+    </fieldset>
+
+    <fieldset style="background-color:rgb(236, 136, 156);" >
+    <legend style="border: 1px solid black; background-color: white;">Documentos Adjuntados</legend>
+
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="DNI">Fotocopia DNI
+                </td>
+                <td>
+                    <input type="checkbox" name="Certificado">Certificado Académico
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="Documentos">Otros Documentos (especifique)
+                </td>
+                <td>     
+                    <input type="text" name="Documentos">
+                </td>
+
+            </tr>
+
+
+        </tbody>
+
+    </table>
+    
+    </fieldset>
+
+<p>
+    <input type="submit" name="boton" value="Enviar Solicitud">
+</p>
+
+</form>
+</body>
+</html>
